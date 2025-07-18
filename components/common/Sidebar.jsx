@@ -2,7 +2,10 @@ import React from 'react';
 
 function Sidebar({ isSidebarOpen }) {
     return (
-        <aside id="sidebar" className={`sidebar ${isSidebarOpen ? '' : 'd-none'}`}>
+        <aside
+            id="sidebar"
+            className={`sidebar ${isSidebarOpen ? 'sidebar-open' : 'sidebar-closed'}`}
+        >
             <ul className="sidebar-nav" id="sidebar-nav">
                 <li className="nav-item">
                     <a className="nav-link">
